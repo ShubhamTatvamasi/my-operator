@@ -1,0 +1,16 @@
+domain: shubhamtatvamasi.com
+layout:
+- go.kubebuilder.io/v3
+projectName: my-operator
+repo: my-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: shubhamtatvamasi.com
+  group: my-operator
+  kind: MyCRD
+  path: my-operator/api/v1
+  version: v1
+version: "3"
